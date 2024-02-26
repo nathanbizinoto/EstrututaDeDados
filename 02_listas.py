@@ -93,3 +93,30 @@ print(legumes)
 # Traços separador
 print("-" * 60)
 
+# 10) JUNTANDO (CONCATENANDO) DUAS LISTAS: extend()
+mais_legumes = ["abobrinha", "quiabo", "jiló", "cabotiá", "cará"]
+legumes.extend(mais_legumes)
+
+print(legumes)
+
+#Traço separador
+print("-" * 60)
+
+# 11) FATIANDO UMA LISTA
+#      Fatiar significa copiar um pedaço da lista (uma sublista)
+#      para uma nova lista
+
+# Cria uma sublista que contém os elementos das posições 2 a 5
+# (posição 6 NÃO entra)
+sublista2_5 = legumes[2:6]
+print("Sublista de 2 a 5:", sublista2_5)
+
+# Cria uma sublista que contém os elementos desde o início até a
+# posição 6 (posição 7 NÃO entra)
+sublista_inicio_6 = legumes[:7]
+print("Sublista do início até a posição 6:", sublista_inicio_6)
+
+# Cria uma sublista que contém os elementos da posição 4 até o final
+sublista_4_fim = legumes[4:]
+print("Sublista da posição 4 até o final:", sublista_4_fim)
+
