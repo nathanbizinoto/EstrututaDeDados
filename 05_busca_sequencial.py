@@ -40,7 +40,7 @@ sys.dont_write_bytecode = True
 from time import time 
 
 # TESTES COM NOMES
-from data.nomes_completos import nomes
+from nomes_completos import nomes
 
 hora_ini = time()
 resultado1 = busca_sequencial(nomes, "EDSON PEREIRA")
