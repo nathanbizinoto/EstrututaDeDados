@@ -1,6 +1,6 @@
 def busca_sequencial(lista, val):
     """
-    Função que realiza uma busca sequencial em uma lista, 
+    Função que realiza uma busca sequencial em uma lista,
     procurando por val.
     Se val for encontrado, retorna a posição de val na lista.
     Caso contrário, retorna o valor convencional -1.
@@ -9,10 +9,9 @@ def busca_sequencial(lista, val):
     # (é necessário ter acesso às posições dos elementos)
     for pos in range(len(lista)):
         # Encontrou val; retorna a posição onde foi encontrado
-        if val == lista[pos]: 
-            return pos
-    # <-- CUIDADO COM A IDENTAÇÃO AQUI!
-    # Percorreu toda a lista e não encotrou: retorna -1
+        if val == lista[pos]: return pos
+    # <-- CUIDADO COM A INDENTAÇÃO AQUI!
+    # Percorreu toda a lista e não encontrou val: retorna -1
     return -1
 ##############################################################
 
@@ -32,15 +31,15 @@ print(f"Elemento 19 encontrado na posição {pos19}")
 
 print("-" * 40)
 
-###############################################################
+############################################################
 
 import sys
 sys.dont_write_bytecode = True
 
-from time import time 
+from time import time
 
 # TESTES COM NOMES
-from nomes_completos import nomes
+from data.nomes_completos import nomes
 
 hora_ini = time()
 resultado1 = busca_sequencial(nomes, "EDSON PEREIRA")
@@ -63,6 +62,5 @@ print(f"Tempo gasto: {(hora_fim - hora_ini) * 1000}ms\n")
 hora_ini = time()
 resultado4 = busca_sequencial(nomes, "GILCINEIA GARCIA")
 hora_fim = time()
-print(f"GILCINEIA GARCIA encontrado na posição {resultado4}")
+print(f"GILCINEIA GARCIA encontado na posição {resultado4}")
 print(f"Tempo gasto: {(hora_fim - hora_ini) * 1000}ms\n")
-
